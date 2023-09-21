@@ -5,16 +5,16 @@ import { TabButton } from './TabButton';
 
 const TAB_DATA = [
     {
-        title: "Skills",
-        id: "skills",
+        title: "SWE Skills",
+        id: "SWE skills",
         content: (
           <ul className="list-disc pl-2">
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>PostgreSQL</li>
-            <li>Sequelize</li>
+            <li>Next.js</li>
+            <li>React.js</li>
+            <li>PHP</li>
+            <li>Html&CSS</li>
             <li>JavaScript</li>
-            <li>React</li>
+            <li>Python</li>
           </ul>
         ),
       },
@@ -23,18 +23,21 @@ const TAB_DATA = [
         id: "education",
         content: (
           <ul className="list-disc pl-2">
-            <li>Fullstack Academy of Code</li>
-            <li>University of California, Santa Cruz</li>
+            <li>Northeastern University🇺🇸<span>M.S. Information System</span></li>
+            <li>University of Shanghai for Science and Technology🇨🇳B.B.A. International Business</li>
+            <li>Brest Business School🇫🇷B.B.A. International Business Management</li>
           </ul>
         ),
       },
       {
-        title: "Certifications",
-        id: "certifications",
+        title: "PM Skills",
+        id: "PM skills",
         content: (
           <ul className="list-disc pl-2">
-            <li>AWS Cloud Practitioner</li>
-            <li>Google Professional Cloud Developer</li>
+            <li>Budget Management</li>
+            <li>Supplier Management</li>
+            <li>Cross-functional Communication</li>
+            <li>Media Production</li>
           </ul>
         ),
       },
@@ -65,11 +68,18 @@ const AboutSection = () => {
                 </p>
                 <div className='flex flex-row justify-start mt-8'>
                     <TabButton 
-                       selectTab={()=>handleTabChange("skills")} 
-                       active={tab === "skills"}
+                       selectTab={()=>handleTabChange("SWE skills")} 
+                       active={tab === "SWE skills"}
                     >
                         {" "}
-                        Skills{" "}
+                        SWE Skills{" "}
+                    </TabButton>
+                    <TabButton 
+                       selectTab={()=>handleTabChange("PM skills")} 
+                       active={tab === "PM skills"}
+                    >
+                        {" "}
+                        PM Skills{" "}
                     </TabButton>
                     <TabButton 
                        selectTab={()=>handleTabChange("education")} 
@@ -77,13 +87,6 @@ const AboutSection = () => {
                     >
                         {" "}
                         Education{" "}
-                    </TabButton>
-                    <TabButton 
-                       selectTab={()=>handleTabChange("certifications")} 
-                       active={tab === "certifications"}
-                    >
-                        {" "}
-                        Certifications{" "}
                     </TabButton>
                 </div>
                 <div className='mt-8'>

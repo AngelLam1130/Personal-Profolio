@@ -6,57 +6,93 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "RACK Neural Audio Inverter",
+    description: "(Won a monetary prize)RACK Neural Audio Inverter is an AI latents inversion remixer that allows music producer to create electronic music with one click.",
     image: "./images/project/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "SWE"],
+    gitUrl: "https://github.com/Romainpaulus/RKA-808",
+    achievement: "(Won a monetary prize)RACK Neural Audio Inverter is an AI latents inversion remixer that allows music producer to create electronic music with one click.",
+    // previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Silicon Valley Chinese Sports Association Web Development",
+    description: "Silicon Valley Chinese Sports Association Web is a website that allows attendees to sign up the competition, group their team and follow up the information of the competition. ",
     image: "./images/project/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "SWE"],
+    gitUrl: "http://svcsa.org/index",
+    achievement: "(Won a monetary prize)RACK Neural Audio Inverter is an AI latents inversion remixer that allows music producer to create electronic music with one click.",
+    // previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Voluntary Project in Tanzania Africa on Climate Change, Sustainability and Personal Hygiene",
+    description: "This project was organized by Raleigh International,UK to let the young people take part in community building, environmental projects and outdoor expedition to equip young people with leadership skills and create lasting change with communities to take urgent action on the world’s most important issues.",
     image: "./images/project/3.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Volunteer"],
     gitUrl: "/",
     previewUrl: "/",
+    achievement: "Organized 2 community meeting as a leader.Built a toilet for local primary school.Built 20 rocket stoves for local communitiy.Taught more than 40 classes on climate change and sustainability.",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Fundraising for Tanzania Community with Disposable Chopstick Handmade Model",
+    description: "To fundraise for Tanzania community, I gathered the used disposable chopsticks at the dorm and use them build a model in two months. The model successfully sold at a charity action in the end. ",
     image: "./images/project/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Volunteer"],
     gitUrl: "/",
     previewUrl: "/",
+    achievement: "Sold at $1000 USD",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Fundraising for Shanghai United Foundation with Hiking 50KM in one day ",
+    description: "Completing a 50-kilometer hike to raise funds is an event aimed at encouraging everyone to pay attention to the philanthropic sector and inspire donations through the unwavering dedication of the hikers.",
     image: "./images/project/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["All", "Volunteer"],
+    gitUrl: "https://baozou.lianquan.org/",
     previewUrl: "/",
+    achievement: "Successfully fundraise $5000 USD",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "2022 Naraka Bladepoint Pro League Season",
     description: "Project 5 description",
     image: "./images/project/6.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Esports"],
     gitUrl: "/",
     previewUrl: "/",
+    achievement: "(Won a monetary prize)RACK Neural Audio Inverter is an AI latents inversion remixer that allows music producer to create electronic music with one click.",
+  },
+  {
+    id: 7,
+    title: "Call of Abyss 2020-2022",
+    description: "Project 5 description",
+    image: "./images/project/7.png",
+    tag: ["All", "Esports"],
+    gitUrl: "/",
+    previewUrl: "/",
+    achievement: "(Won a monetary prize)RACK Neural Audio Inverter is an AI latents inversion remixer that allows music producer to create electronic music with one click.",
+  },
+  {
+    id: 8,
+    title: "Fantasy Westward Journey Pro League 2020-2022",
+    description: "Project 5 description",
+    image: "./images/project/8.png",
+    tag: ["All", "Esports"],
+    gitUrl: "/",
+    previewUrl: "/",
+    achievement: "(Won a monetary prize)RACK Neural Audio Inverter is an AI latents inversion remixer that allows music producer to create electronic music with one click.",
+  },
+  {
+    id: 9,
+    title: "2020 Annual Ceremony of CC Live",
+    description: "Project 5 description",
+    image: "./images/project/9.png",
+    tag: ["All", "Esports"],
+    gitUrl: "/",
+    previewUrl: "/",
+    achievement: "(Won a monetary prize)RACK Neural Audio Inverter is an AI latents inversion remixer that allows music producer to create electronic music with one click.",
   },
 ];
 
@@ -72,11 +108,6 @@ const ProjectsSection = () => {
     project.tag.includes(tag)
   );
 
-  const cardVariants = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
-
   return (
     <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
@@ -90,13 +121,23 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="SWE"
+          isSelected={tag === "SWE"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Esports"
+          isSelected={tag === "Esports"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Volunteer"
+          isSelected={tag === "Volunteer"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Hobby"
+          isSelected={tag === "Hobby"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -105,9 +146,10 @@ const ProjectsSection = () => {
             key={project.id}
             title={project.title}
             description={project.description}
+            achievement={project.achievement}
             imgUrl={project.image}
             gitUrl={project.gitUrl}
-            previewUrl={project.previewUrl}
+            // previewUrl={project.previewUrl}
           />
         ))}
       </ul>

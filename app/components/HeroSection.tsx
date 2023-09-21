@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
@@ -15,9 +16,11 @@ export const HeroSection = () => {
                     <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially
-                            'Angel',
+                            'Anqi (Angel) LIN',
                             1000, // wait 1s before replacing "Mice" with "Hamsters"
-                            'Web Developer',
+                            'Software Engineer',
+                            1000,
+                            'Esports Producer',
                             1000,
                             'Project Manager',
                             1000,
@@ -29,16 +32,27 @@ export const HeroSection = () => {
                         repeat={Infinity}
                         />
                 </h1>
-                <p className='text-white text-base sm:text-lg mb-6 lg:text-xl'>
+                {/* <p className='text-white text-base sm:text-lg mb-6 lg:text-xl'>
                     ABCDEFGHIJKLMN
-                </p>
+                </p> */}
+                <br></br>
+                <br></br>
                 <div>
-                    <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white'>
-                        Hire Me
-                    </button>
-                    <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white mt-3'>
-                        <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
-                    </button>
+                    <a 
+                        href='https://www.linkedin.com/in/anqi-lin-52a361269/'
+                        className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white'>
+                        LinkedIn
+                    </a>
+                    <a 
+                        href='https://github.com/AngelLam1130'
+                        className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white'>
+                        Github
+                    </a>
+                    <a 
+                        href='https://www.instagram.com/lin.anqi.10/'
+                        className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white'>
+                        Instagram
+                    </a>
                 </div>
             </div>
             <div className='col-span-5 place-self-center mt-4 lg:mt-0'>

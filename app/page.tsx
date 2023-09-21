@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar'
 import { Container } from 'postcss'
 import AboutSection from './components/AboutSection'
 import ProjectsSection from './components/ProjectSection'
+import { ContactSection } from './components/ContactSection'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <ProjectsSection />
+          <ContactSection />
         </div>
     </main>
   )
