@@ -14,7 +14,7 @@ export const ContactSection = () => {
                     // Same substring at the start will only be typed out once, initially
                     'Nice to meet you❤️❤️❤️',
                     1000, // wait 1s before replacing "Mice" with "Hamsters"
-                    'Let\'s connect🤝🤝🤝',
+                    'Let us connect🤝🤝🤝',
                     1000,
                 ]}
                 wrapper="span"

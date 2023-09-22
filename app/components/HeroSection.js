@@ -58,7 +58,7 @@ export const HeroSection = () => {
                 </div>
             </div>
             <div className='col-span-5 place-self-center mt-10 lg:mt-0'>
-            <div className="rounded-full bg-[#181818] w-[380px] h-[380px] relative">
+                <div className="rounded-full bg-[#181818] w-[380px] h-[380px] relative">
                     <Image
                         src = '/images/hero-image.png'
                         alt = 'hero image'

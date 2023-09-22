@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const TabButton = ({ active, selectTab, children }) => {
-    const buttonClasses = active ? "text-white border-b border-purple-500" : "text-[#ADB7BE]";
+    const buttonClasses = active ? "text-white border-b border-orange-500" : "text-[#ADB7BE]";
 
     return (
         <button onClick={selectTab}>
