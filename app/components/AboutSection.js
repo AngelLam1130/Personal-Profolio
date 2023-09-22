@@ -72,10 +72,16 @@ const AboutSection = () => {
                 height={700}
             />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full '>
-                <div className='border border-gray-300 p-4 mt-10'>
-                  <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
+                <div className='border border-gray-300 p-4 mt-10 text-justify'>
+                  <h2 className='text-4xl font-bold text-[#efb14e] mb-4'>About Me</h2>
                   <p className='text-base lg:text-lg'>
-                      Aspiring software engineer pursuing computer science degree and accomplished project manager with extensive experience in cross-functional collaboration, execution cycle planning, data analytics and breaking down problems. Experienced with utilizing JavaScript, PHP, HTML and CSS in software development. Beyond my professional life, I'm a solo traveler who has worked in France and volunteered in Africa and explored over 20 countries, even hiked on a volcano. Now, I'm channeling that adapting spirit into the changing world as product manager.
+                      Welcome to my website!!!
+                  </p>
+                  <p className='text-base lg:text-lg'>
+                      A cool girl who loves travel and outdoor activities is channeling the adventurous spirit into role as <span class='text-m font-bold text-[#e7ef4e]'>SWE intern</span> and <span class='text-m font-bold text-[#e7ef4e]'>PM intern</span>.
+                  </p>
+                  <p className='text-base lg:text-lg'>
+                      As project manager in NetEase Game for the past 3 years, I am equipped with extensive experience in cross-functional collaboration, execution cycle planning, data analytics and breaking down problems. Coding world is like a open land. I enjoy building my own architecture from scratch with my software development skills learning from curriculum at NEU, hackathons, tech communities such as RTC,Women Who Code and etc.
                   </p>
                 </div>
                 <div className='flex flex-row justify-start mt-8'>

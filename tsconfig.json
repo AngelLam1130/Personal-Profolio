@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/TabButton.js", "app/components/ProjectTag.js", "app/components/ProjectSection.js", "app/components/ProjectCard.js", "app/components/NavLink.js", "app/components/Navbar.js", "app/components/MenuOverlay.js", "app/components/HeroSection.js", "app/components/ContactSection.js", "app/components/AboutSection.js"],
   "exclude": ["node_modules"]
 }
