@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 export const ContactSection = () => {
   return (
     <section id="projects">
-        <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-center mb-20 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
+        <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600 text-center mb-20 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
             <br></br>
             <br></br>
            

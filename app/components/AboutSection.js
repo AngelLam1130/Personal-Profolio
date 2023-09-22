@@ -15,6 +15,9 @@ const TAB_DATA = [
             <li>Html&CSS</li>
             <li>JavaScript</li>
             <li>Python</li>
+            <br></br>
+            <br></br>
+            <br></br>
           </ul>
         ),
       },
@@ -26,6 +29,9 @@ const TAB_DATA = [
             <li>Northeastern University🇺🇸<span>M.S. Information System</span></li>
             <li>University of Shanghai for Science and Technology🇨🇳B.B.A. International Business</li>
             <li>Brest Business School🇫🇷B.B.A. International Business Management</li>
+            <br></br>
+            <br></br>
+            <br></br>
           </ul>
         ),
       },
@@ -38,6 +44,9 @@ const TAB_DATA = [
             <li>Supplier Management</li>
             <li>Cross-functional Communication</li>
             <li>Media Production</li>
+            <br></br>
+            <br></br>
+            <br></br>
           </ul>
         ),
       },
@@ -60,13 +69,15 @@ const AboutSection = () => {
                 src='/images/about-image.png'
                 alt = 'about image'
                 width={500}
-                height={500}
+                height={700}
             />
-            <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
-                <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                <p className='text-base lg:text-lg'>
-                    Aspiring software engineer pursuing computer science degree and accomplished project manager with extensive experience in cross-functional collaboration, execution cycle planning, data analytics and breaking down problems. Experienced with utilizing JavaScript, PHP, HTML and CSS in software development. Beyond my professional life, I'm a solo traveler who has worked in France and volunteered in Africa and explored over 20 countries, even hiked on a volcano. Now, I'm channeling that adapting spirit into the changing world as product manager.
-                </p>
+            <div className='mt-4 md:mt-0 text-left flex flex-col h-full '>
+                <div className='border border-gray-300 p-4 mt-10'>
+                  <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
+                  <p className='text-base lg:text-lg'>
+                      Aspiring software engineer pursuing computer science degree and accomplished project manager with extensive experience in cross-functional collaboration, execution cycle planning, data analytics and breaking down problems. Experienced with utilizing JavaScript, PHP, HTML and CSS in software development. Beyond my professional life, I'm a solo traveler who has worked in France and volunteered in Africa and explored over 20 countries, even hiked on a volcano. Now, I'm channeling that adapting spirit into the changing world as product manager.
+                  </p>
+                </div>
                 <div className='flex flex-row justify-start mt-8'>
                     <TabButton 
                        selectTab={()=>handleTabChange("SWE skills")} 

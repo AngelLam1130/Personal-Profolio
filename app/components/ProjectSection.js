@@ -160,15 +160,15 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-15 mb-8 md:mb-12">
         My Experience
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="All"
           isSelected={tag === "All"}
-        />
+        /> */}
         <ProjectTag
           onClick={handleTagChange}
           name="SWE"
