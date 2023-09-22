@@ -4,6 +4,7 @@ import Link from 'next/link'
 import NavLink from './NavLink'
 import { Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid';
 import { MenuOverlay } from './MenuOverlay';
+import Image from 'next/image';
 
 const navLinks = [
     {
@@ -29,8 +30,9 @@ export const Navbar = () => {
                 href={"/"} 
                 className='text-2xl md:text-5xl text-white font-semibold'
             >
-            <img 
-                src='./images/AngeLogo1.png' 
+            <Image 
+                src='/images/AngeLogo1.png' 
+                alt='angel logo'
                 width={120}
                 height={120}  
             />

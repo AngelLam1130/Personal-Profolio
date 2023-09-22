@@ -24,9 +24,6 @@ export const ContactSection = () => {
         </h1>
         <br></br>
         <br></br>
-        <div>
-            <img></img>
-        </div>
     </section>
   )
 }
