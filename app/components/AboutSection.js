@@ -43,7 +43,11 @@ const TAB_DATA = [
             <li>Budget Management</li>
             <li>Supplier Management</li>
             <li>Cross-functional Communication</li>
-            <li>Media Production</li>
+            <li>Customer Oriented</li>
+            <li>Ownership</li>
+            <li>Fast Learner</li>
+            <li>Problem Solving</li>
+            <li>Responsible</li>
             <br></br>
             <br></br>
             <br></br>
