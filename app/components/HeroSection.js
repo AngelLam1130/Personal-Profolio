@@ -11,9 +11,9 @@ export const HeroSection = () => {
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <h1 className='text-white mt-200 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
                     <br></br>
-                    {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600">
                         Hello, I am{''}
-                    </span> */}
+                    </span>
                     <br></br>
                     <TypeAnimation
                         sequence={[
