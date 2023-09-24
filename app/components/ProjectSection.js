@@ -137,7 +137,7 @@ const projectsData = [
   {
     id: 14,
     title: "Camper",
-    description: "I would say mayself an ace on camping. I have started to camp since 2016 from wild camping which required you to dig a temporary toilet for yourself to current glamping. ",
+    description: "I would say mayself an ace on camping. I have started to camp since 2016 from wild camping which even required you to dig a temporary toilet for yourself to current glamping. ",
     image: "./images/project/14.png",
     tag: ["All", "Hobby"],
     gitUrl: "https://abrasive-broom-c74.notion.site/Camping-baa2fd3c45d045bea4437d052f658627",
