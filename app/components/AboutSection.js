@@ -15,6 +15,8 @@ const TAB_DATA = [
             <li>Html&CSS</li>
             <li>JavaScript</li>
             <li>Python</li>
+            <li>Git</li>
+            <li>Postman</li>
             <br></br>
             <br></br>
             <br></br>
