@@ -42,18 +42,26 @@ export const HeroSection = () => {
                 <div>
                     <a 
                         href='https://www.linkedin.com/in/anqi-lin-52a361269/'
-                        className='ml-4 px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-200 via-yellow-500 to-orange-500 hover:bg-slate-200 text-black text-bold'>
+                        className='ml-4 px-4 py-2 w-auto sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-200 via-yellow-500 to-orange-500 hover:bg-slate-200 text-black text-bold'>
                         LinkedIn
                     </a>
                     <a 
                         href='https://github.com/AngelLam1130'
-                        className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-200 via-yellow-500 to-orange-500 hover:bg-slate-200 text-black text-bold'>
+                        className='px-4 py-2 w-auto sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-200 via-yellow-500 to-orange-500 hover:bg-slate-200 text-black text-bold'>
                         Github
                     </a>
-                    <a 
+                    {/* <a 
                         href='https://www.instagram.com/lin.anqi.10/'
-                        className='mr-4 px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-yellow-200 via-yellow-500 to-orange-500 hover:bg-slate-200 text-black text-bold'>
-                        Instagram
+                        className='mr-4 px-4 py-2 w-auto sm:w-fit rounded-full bg-gradient-to-br from-yellow-200 via-yellow-500 to-orange-500 hover:bg-slate-200 text-black text-bold'>
+                        Ins
+                    </a> */}
+                {/* </div>
+                <div>
+                    <br></br> */}
+                    <a 
+                        href='https://drive.google.com/file/d/1Ztf0pAB1BrlJLvs78KfgtyYZqIVez1jk/view'
+                        className='mr-4 px-4 py-2 w-auto sm:w-fit rounded-full bg-gradient-to-br from-yellow-200 via-yellow-500 to-orange-500 hover:bg-slate-200 text-black text-bold'>
+                        Resume
                     </a>
                 </div>
             </div>
