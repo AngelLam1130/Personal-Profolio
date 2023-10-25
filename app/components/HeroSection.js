@@ -59,7 +59,7 @@ export const HeroSection = () => {
                 <div>
                     <br></br> */}
                     <a 
-                        href='https://drive.google.com/file/d/11h45YcwyZTCjPPJ5F6GueMdrWnKZ9YbX/view'
+                        href='https://drive.google.com/file/d/1kvVC4sAEAGSpO8yAZqp40S4eSHVFjthg/view?usp=sharing'
                         className='mr-4 px-4 py-2 w-auto sm:w-fit rounded-full bg-gradient-to-br from-yellow-200 via-yellow-500 to-orange-500 hover:bg-slate-200 text-black text-bold'>
                         Resume
                     </a>
